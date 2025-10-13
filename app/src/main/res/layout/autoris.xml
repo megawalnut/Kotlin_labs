@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DF100FF"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fou"/>
+
+        <Button
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:textColor="#FF000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:hint="->"
+        android:textSize="20dp"
+        android:background="@drawable/forbutton"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#2936207D"
+        android:hint="Логин"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#2936207D"
+        android:hint="Пароль"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editFullName"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#2936207D"
+        android:hint="ФИО"/>
+
+    <EditText
+        android:id="@+id/editBirthDate"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#2936207D"
+        android:hint="Дата рождения"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/switchMW"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:checked="false"
+            android:background="@drawable/forbutton"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ж"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:textSize="20sp"
+        android:textColor="#FF000000"
+        android:background="@drawable/forbutton"/>
+</LinearLayout>
