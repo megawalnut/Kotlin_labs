@@ -1,11 +1,12 @@
 package com.example.lab_1_2
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.ListView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class ListActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class ListActivity : Activity() {
         setContentView(R.layout.activity_listusers)
 
 
-        val users = findViewById<ListView>(R.id.userListView)
+        val users = findViewById<RecyclerView>(R.id.userRecyclerView)
         val exitButton = findViewById<Button>(R.id.exit)
         val addButton = findViewById<Button>(R.id.add)
 
@@ -37,19 +38,21 @@ class ListActivity : Activity() {
             sex = "Ж"
         ))
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listus)
+        users.layoutManager = LinearLayoutManager(this)
+
+        val adapter = UsrAdapter(listus)
+
         users.adapter = adapter
 
         addButton.setOnClickListener {
             Log.d("ListUsers", "Переход на создание пользователя")
+            val intent = Intent(this, Autorisation::class.java)
+            startActivity(intent)
         }
 
         exitButton.setOnClickListener {
             Log.d("ListUsers", "Нажата кнопка Выход")
-        }
-
-        users.setOnItemClickListener { _, _, position, _ ->
-            Log.d("ListUsers", "Нажат элемент: ${listus[position]}")
+            finish()
         }
     }
 }

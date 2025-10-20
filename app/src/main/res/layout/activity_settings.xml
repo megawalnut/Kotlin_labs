@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F6A2">
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/icon_roblox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:layout_marginBottom="100sp"/>
+
+    <Switch
+        android:id="@+id/styleSwitch"
+        android:gravity="center"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:background="@drawable/forbutton"
+        android:text="Смена стиля"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/settingsExit"
+        android:layout_width="140sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Выход"
+        android:background="@drawable/forbutton"
+        android:textColor="#FF000000"/>
+</LinearLayout>

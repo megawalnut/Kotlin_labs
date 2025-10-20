@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80sp"
+    android:background="#F7F6A2"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/textFullName"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФИО"
+        android:textColor="#6E85B7"
+        android:background="#FBCEBA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textFullDate"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата рождения"
+        android:textColor="#B7A8D5"
+        android:background="#FBCEBA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

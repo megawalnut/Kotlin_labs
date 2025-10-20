@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1DF100FF"
+    android:background="#F7F6A2"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
     <FrameLayout
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="40sp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -30,50 +30,60 @@
         android:textColor="#FF000000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
+        android:layout_marginLeft="130sp"
         android:hint="->"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:background="@drawable/forbutton"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="80dp"/>
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/icon_roblox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:text="Registration"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10sp"/>
 
     <EditText
         android:id="@+id/editLogin"
-        android:layout_marginTop="15dp"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:background="#2936207D"
+        android:layout_marginTop="5sp"
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:background="#FBCEBA"
         android:hint="Логин"/>
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_marginTop="15dp"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:background="#2936207D"
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:background="#FBCEBA"
         android:hint="Пароль"
         android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/editFullName"
-        android:layout_marginTop="15dp"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:background="#2936207D"
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:background="#FBCEBA"
         android:hint="ФИО"/>
 
     <EditText
         android:id="@+id/editBirthDate"
-        android:layout_marginTop="15dp"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:background="#2936207D"
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:background="#FBCEBA"
         android:hint="Дата рождения"/>
 
     <LinearLayout
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="25sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -82,12 +92,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="M"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
         <Switch
             android:id="@+id/switchMW"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:checked="false"
             android:background="@drawable/forbutton"
             tools:ignore="UseSwitchCompatOrMaterialXml"/>
@@ -96,16 +106,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ж"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_marginTop="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Добавить"
-        android:textSize="20sp"
-        android:textColor="#FF000000"
-        android:background="@drawable/forbutton"/>
+    <LinearLayout
+        android:layout_marginTop="40sp"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:text="Добавить"
+            android:textSize="20sp"
+            android:textColor="#FF000000"
+            android:background="@drawable/forbutton"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/autExit"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:text="Выход"
+            android:textSize="20sp"
+            android:textColor="#FF000000"
+            android:background="@drawable/forbutton"/>
+    </LinearLayout>
 </LinearLayout>

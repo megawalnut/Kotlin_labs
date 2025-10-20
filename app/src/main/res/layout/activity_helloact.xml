@@ -2,29 +2,76 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F7F6A2">
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/icon_roblox" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HelloActivity"
-        android:textSize="24sp"/>
+        android:layout_marginTop="15sp"
+        android:text="Hello"
+        android:textSize="30sp"
+        android:layout_marginBottom="100sp"/>
+
+    <EditText
+        android:id="@+id/startLogin"
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:background="#FBCEBA"
+        android:hint="Логин"
+        android:layout_marginBottom="8sp"/>
+
+    <EditText
+        android:id="@+id/startPassword"
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="30sp"
+        android:background="#FBCEBA"
+        android:hint="Пароль"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="80sp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/registry"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:background="@drawable/forbutton"
+            android:textColor="#FF000000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/entry"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Вход"
+            android:textSize="16sp"
+            android:background="@drawable/forbutton"
+            android:textColor="#FF000000"/>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/startForm"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
+        android:id="@+id/exit"
+        android:layout_width="140sp"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
-        android:background="@drawable/forbutton"
-        android:textColor="#FF000000"/>
-
-    <Button
-        android:id="@+id/startList"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Список пользователей"
+        android:text="Выход"
+        android:textSize="16sp"
         android:background="@drawable/forbutton"
         android:textColor="#FF000000"/>
 </LinearLayout>

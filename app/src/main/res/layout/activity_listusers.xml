@@ -3,11 +3,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1DF100FF"
+    android:background="#F7F6A2"
     android:padding="16dp">
 
-    <ListView
-        android:id="@+id/userListView"
+    <ImageView
+        android:layout_marginTop="20sp"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_roblox" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="Users"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="100sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
@@ -39,4 +56,5 @@
             android:textColor="#FF000000"
             android:background="@drawable/forbutton"/>
     </LinearLayout>
+
 </LinearLayout>

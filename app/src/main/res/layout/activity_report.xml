@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F6A2">
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/icon_roblox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Report"
+        android:textSize="30sp"
+        android:layout_marginBottom="100sp"/>
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="140sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="15sp"
+        android:text="Сообщить о проблеме"
+        android:background="@drawable/forbutton"
+        android:textColor="#FF000000"/>
+
+    <Button
+        android:id="@+id/reportExit"
+        android:layout_width="140sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="15sp"
+        android:text="Выход"
+        android:background="@drawable/forbutton"
+        android:textColor="#FF000000"/>
+</LinearLayout>
